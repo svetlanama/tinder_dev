@@ -13,7 +13,11 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var kolodaView: KolodaView!
     
-    var users = [User] ()
+    var users = [User] () {
+        didSet {
+            kolodaView.reloadData()
+        }
+    }
     
     @IBAction func onUndo() {
         kolodaView.resetCurrentCardIndex()
@@ -32,17 +36,15 @@ class MainViewController: UIViewController {
 
         initKolodaView()
         initializeData()
-        kolodaView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    /// Initialize Koloda
+    /// Load intial data
     private func initializeData() {
-        users.append(User(name: "Kate", sex: "F", skill: "C#"))
-        users.append(User(name: "Dave", sex: "M", skill: "Swift"))
+        users = ParseUtils.parseUsers(fileName: "data")
     }
     
     /// Initialize Koloda

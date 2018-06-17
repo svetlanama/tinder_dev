@@ -8,6 +8,18 @@
 
 import Foundation
 
+/// Colunns in data.csv
+///
+/// - kName:
+/// - kSkill:
+/// - kSex:
+enum UserColumn: String {
+    case kName = "Name "
+    case kSkill = "Skill "
+    case kSex = "Sex"
+}
+
+
 class User {
     
     enum Sex: String {
