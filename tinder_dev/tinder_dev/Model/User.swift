@@ -39,6 +39,15 @@ class User {
     }
 
     func getImageName() -> String {
-         return "placeholder"
+        let count = Constants.imageCount
+        
+        switch sex {
+        case .Male:
+            return "m_\(Utils.getRandom(max: count))"
+        case .Female:
+            return "f_\(Utils.getRandom(max: count))"
+        default:
+            return "placeholder"
+        }
     }
 }
