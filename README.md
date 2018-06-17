@@ -2,4 +2,4 @@
 
 ## Demo
 
-![Alt text](https://github.com/svetlanama/tinder_dev/demo/animation.gif "Demo")
+![Alt text](https://github.com/svetlanama/tinder_dev/blob/masterdemo/animation.gif "Demo")
