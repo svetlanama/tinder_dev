@@ -24,53 +24,77 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slt-l9-x6f">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zc-nd-RdC">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zc-nd-RdC">
                                                 <rect key="frame" x="309" y="0.0" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="53c-mE-W7t"/>
+                                                    <constraint firstAttribute="width" constant="50" id="saU-KM-89T"/>
+                                                </constraints>
                                                 <state key="normal" title=" " image="btn_undo"/>
+                                                <connections>
+                                                    <action selector="onUndo" destination="BYZ-38-t0r" eventType="touchUpInside" id="TPx-cT-f5D"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="0Zc-nd-RdC" firstAttribute="centerY" secondItem="slt-l9-x6f" secondAttribute="centerY" id="2jE-0J-4AV"/>
                                             <constraint firstAttribute="height" constant="50" id="lIm-Cb-jeI"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Zc-nd-RdC" secondAttribute="trailing" constant="16" id="xmR-tc-lmk"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzW-jK-RzT" customClass="KolodaView" customModule="Koloda">
-                                        <rect key="frame" x="0.0" y="50" width="375" height="597"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="497"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIn-lQ-Onj">
                                         <rect key="frame" x="0.0" y="547" width="375" height="100"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gr5-Am-Mg0">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gr5-Am-Mg0">
                                                 <rect key="frame" x="50" y="15" width="70" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="Sj4-va-195"/>
+                                                    <constraint firstAttribute="height" constant="70" id="jdJ-zp-tLM"/>
+                                                </constraints>
                                                 <state key="normal" image="btn_skip_normal"/>
+                                                <connections>
+                                                    <action selector="onLeft" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfQ-ZK-W0S"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWn-gn-5yN">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWn-gn-5yN">
                                                 <rect key="frame" x="255" y="15" width="70" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="2bW-CX-fnH"/>
+                                                    <constraint firstAttribute="height" constant="70" id="KkN-jz-mpt"/>
+                                                </constraints>
                                                 <state key="normal" image="btn_like_normal"/>
+                                                <connections>
+                                                    <action selector="onRight" destination="BYZ-38-t0r" eventType="touchUpInside" id="yF3-TQ-d2N"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="Gr5-Am-Mg0" firstAttribute="leading" secondItem="OIn-lQ-Onj" secondAttribute="leading" constant="50" id="1QS-xm-HMg"/>
+                                            <constraint firstItem="Gr5-Am-Mg0" firstAttribute="centerY" secondItem="OIn-lQ-Onj" secondAttribute="centerY" id="AAX-Ed-OtN"/>
                                             <constraint firstAttribute="height" constant="100" id="fsz-cx-mUE"/>
+                                            <constraint firstAttribute="trailing" secondItem="qWn-gn-5yN" secondAttribute="trailing" constant="50" id="h52-Wv-GhZ"/>
+                                            <constraint firstItem="qWn-gn-5yN" firstAttribute="centerY" secondItem="OIn-lQ-Onj" secondAttribute="centerY" id="rHq-cb-43t"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="OIn-lQ-Onj" firstAttribute="top" secondItem="jzW-jK-RzT" secondAttribute="bottom" id="66g-4s-P4u"/>
                                     <constraint firstAttribute="trailing" secondItem="slt-l9-x6f" secondAttribute="trailing" id="6px-kv-DVJ"/>
                                     <constraint firstItem="slt-l9-x6f" firstAttribute="top" secondItem="fPp-jU-aih" secondAttribute="top" id="AYu-bD-mg3"/>
-                                    <constraint firstAttribute="trailing" secondItem="jzW-jK-RzT" secondAttribute="trailing" id="XYW-yK-6rM"/>
+                                    <constraint firstItem="jzW-jK-RzT" firstAttribute="top" secondItem="slt-l9-x6f" secondAttribute="bottom" id="c8w-aL-aev"/>
                                     <constraint firstItem="OIn-lQ-Onj" firstAttribute="leading" secondItem="fPp-jU-aih" secondAttribute="leading" id="fVj-rB-3rt"/>
+                                    <constraint firstItem="jzW-jK-RzT" firstAttribute="leading" secondItem="fPp-jU-aih" secondAttribute="leading" id="iPg-bP-Rtx"/>
                                     <constraint firstItem="slt-l9-x6f" firstAttribute="leading" secondItem="fPp-jU-aih" secondAttribute="leading" id="k7b-PM-CCp"/>
                                     <constraint firstAttribute="bottom" secondItem="OIn-lQ-Onj" secondAttribute="bottom" id="kLE-r0-Pri"/>
-                                    <constraint firstItem="jzW-jK-RzT" firstAttribute="top" secondItem="slt-l9-x6f" secondAttribute="bottom" id="kzX-aO-QIq"/>
-                                    <constraint firstAttribute="bottom" secondItem="jzW-jK-RzT" secondAttribute="bottom" id="qEf-zA-0DA"/>
+                                    <constraint firstAttribute="trailing" secondItem="jzW-jK-RzT" secondAttribute="trailing" id="q78-se-lNC"/>
                                     <constraint firstAttribute="trailing" secondItem="OIn-lQ-Onj" secondAttribute="trailing" id="ras-ag-xy2"/>
-                                    <constraint firstItem="jzW-jK-RzT" firstAttribute="leading" secondItem="fPp-jU-aih" secondAttribute="leading" id="u5r-ZA-nql"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -83,9 +107,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="jzW-jK-RzT" id="Ghc-ut-PF9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="29.23538230884558"/>
         </scene>
     </scenes>
     <resources>

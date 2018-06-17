@@ -12,6 +12,14 @@
 		DC143ABE20D69B2100024CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC143ABC20D69B2100024CEE /* Main.storyboard */; };
 		DC143AC020D69B2200024CEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC143ABF20D69B2200024CEE /* Assets.xcassets */; };
 		DC143AC320D69B2200024CEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC143AC120D69B2200024CEE /* LaunchScreen.storyboard */; };
+		DC53790C20D69E67007B718F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53790B20D69E67007B718F /* CardView.swift */; };
+		DC53790E20D69E71007B718F /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC53790D20D69E71007B718F /* CardView.xib */; };
+		DC53791020D69E7F007B718F /* CardViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53790F20D69E7F007B718F /* CardViewWrapper.swift */; };
+		DC53791220D69E8C007B718F /* CustomOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53791120D69E8C007B718F /* CustomOverlayView.swift */; };
+		DC53791420D69EA4007B718F /* CustomOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC53791320D69EA4007B718F /* CustomOverlayView.xib */; };
+		DC53791820D69F06007B718F /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DC53791720D69F05007B718F /* placeholder.png */; };
+		DC53791B20D69F67007B718F /* TinderViewDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53791A20D69F67007B718F /* TinderViewDisplayable.swift */; };
+		DC53791D20D69F86007B718F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53791C20D69F86007B718F /* User.swift */; };
 		F3847BE6666191B3992EAEEF /* Pods_tinder_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324FDD62A53B2CD7DA7CD730 /* Pods_tinder_dev.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +34,14 @@
 		DC143AC220D69B2200024CEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC143AC420D69B2200024CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC505F430570E5EE141F41A4 /* Pods-tinder_dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tinder_dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tinder_dev/Pods-tinder_dev.debug.xcconfig"; sourceTree = "<group>"; };
+		DC53790B20D69E67007B718F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DC53790D20D69E71007B718F /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		DC53790F20D69E7F007B718F /* CardViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewWrapper.swift; sourceTree = "<group>"; };
+		DC53791120D69E8C007B718F /* CustomOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOverlayView.swift; sourceTree = "<group>"; };
+		DC53791320D69EA4007B718F /* CustomOverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomOverlayView.xib; sourceTree = "<group>"; };
+		DC53791720D69F05007B718F /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		DC53791A20D69F67007B718F /* TinderViewDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewDisplayable.swift; sourceTree = "<group>"; };
+		DC53791C20D69F86007B718F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +94,8 @@
 		DC143AB720D69B2100024CEE /* tinder_dev */ = {
 			isa = PBXGroup;
 			children = (
+				DC53791920D69F5B007B718F /* POP */,
+				DC53791520D69EC9007B718F /* Sources */,
 				DC240D3620D69C05001AFEDF /* Model */,
 				DC240D3520D69BFC001AFEDF /* Storyboard */,
 				DC240D3420D69BF2001AFEDF /* View */,
@@ -101,6 +119,11 @@
 		DC240D3420D69BF2001AFEDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DC53790B20D69E67007B718F /* CardView.swift */,
+				DC53790D20D69E71007B718F /* CardView.xib */,
+				DC53790F20D69E7F007B718F /* CardViewWrapper.swift */,
+				DC53791120D69E8C007B718F /* CustomOverlayView.swift */,
+				DC53791320D69EA4007B718F /* CustomOverlayView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,8 +139,33 @@
 		DC240D3620D69C05001AFEDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DC53791C20D69F86007B718F /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DC53791520D69EC9007B718F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DC53791620D69EE9007B718F /* avatars */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DC53791620D69EE9007B718F /* avatars */ = {
+			isa = PBXGroup;
+			children = (
+				DC53791720D69F05007B718F /* placeholder.png */,
+			);
+			path = avatars;
+			sourceTree = "<group>";
+		};
+		DC53791920D69F5B007B718F /* POP */ = {
+			isa = PBXGroup;
+			children = (
+				DC53791A20D69F67007B718F /* TinderViewDisplayable.swift */,
+			);
+			path = POP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC143AC320D69B2200024CEE /* LaunchScreen.storyboard in Resources */,
+				DC53791820D69F06007B718F /* placeholder.png in Resources */,
 				DC143AC020D69B2200024CEE /* Assets.xcassets in Resources */,
+				DC53791420D69EA4007B718F /* CustomOverlayView.xib in Resources */,
+				DC53790E20D69E71007B718F /* CardView.xib in Resources */,
 				DC143ABE20D69B2100024CEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,7 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC143ABB20D69B2100024CEE /* MainViewController.swift in Sources */,
+				DC53790C20D69E67007B718F /* CardView.swift in Sources */,
+				DC53791020D69E7F007B718F /* CardViewWrapper.swift in Sources */,
+				DC53791220D69E8C007B718F /* CustomOverlayView.swift in Sources */,
 				DC143AB920D69B2100024CEE /* AppDelegate.swift in Sources */,
+				DC53791B20D69F67007B718F /* TinderViewDisplayable.swift in Sources */,
+				DC53791D20D69F86007B718F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
